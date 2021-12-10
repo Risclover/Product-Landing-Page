@@ -510,7 +510,7 @@ footer {
     color: white;
     width: 125px;
     background-color: #128dff;
-    z-index: 2;
+    z-index: 1;
     text-transform: uppercase;
     transition: .5s ease-in-out;
 }
