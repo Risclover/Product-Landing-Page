@@ -5,28 +5,201 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+
+    <!-- JQuery Library (my first time using it - for the navbar sroll)-->
+    <script src="jquery-3.5.1.min.js"></script>
+
     <link href="styles.css" rel="stylesheet">
     <title>Product Landing Page Project by Risclover</title>
 </head>
 <body>
-    <header>
-        <nav>
-
+    <header id="header">
+        <nav id="nav-bar" class="regnav">
+            <div class="navbar">
+                <div class="navleft">
+                    <h1 id="company-logo">myCompany</h1>
+                </div>
+                <div class="navright">
+                    <div class="navlinks">
+                        <ul>
+                            <li>
+                                <a href="#Home">Home</a>
+                            </li>
+                            <li>
+                                <a href="#Features">
+                                    Features
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#About">
+                                    About
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#FAQ">
+                                    FAQ
+                                </a>          
+                            </li>
+                            <li>
+                                <a href="#Pricing">
+                                    Pricing
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="navjoin">
+                        <button id="join" class="btncolor">Join us!</button>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
-        <section id="hero">
-
+        <section id="Home">
+            <div class="pagetitle">
+                <h1 class="title">The latest and greatest in innovative technology</h1>
+            </div>
+            <div class="pagesubtitle">
+                <p class="subtitle">This is myCompany. We design products with the customer in mind, so you can rest easy knowing that we will deliver the quality you've been looking for.</p>
+            </div>
+            <div class="form">
+                <form id="form" action="https://www.freecodecamp.com/email-submit">
+                    <input type="email" id="heroinput" placeholder="janedoe@email.com" name="email" autocomplete="on" required>
+                    <button type="submit" class="submit" name="submit">Subscribe</button>
+                </form>
+            </div>
         </section>
-        <section id="info">
-
+        <section id="Features">
+            <div class="sectionhead">
+                <h2>Product Features</h2>
+                <p>So just what does being a client of myCompany mean? Here's what you can expect when you purchase one of our products.</p>
+            </div>
+            <div class="icon-grid-container">
+                <div class="icon-gridbox">
+                    <img src="Finance-Money-Box-icon-gradient2.png" class="icon">
+                    <h3>Quality Work for Low Prices</h3>
+                    <p>Find empty spot in cupboard and sleep all day be superior but fooled again thinking the dog likes me. Nyan fluffness ahh cucumber!</p>
+                </div>
+                <div class="icon-gridbox">
+                    <img src="Ecommerce-Delivery-icon-gradient.png" class="icon2">
+                    <h3>Quick Delivery</h3>
+                    <p>Find empty spot in cupboard and sleep all day be superior but fooled again thinking the dog likes me. Nyan fluffness ahh cucumber!</p>
+                </div>
+                <div class="icon-gridbox">
+                    <img src="Science-Physics-icon-gradient2.png" class="icon">
+                    <h3>Innovations from Top Minds</h3>
+                    <p>Find empty spot in cupboard and sleep all day be superior but fooled again thinking the dog likes me. Nyan fluffness ahh cucumber!</p>
+                </div>
+            </div>
         </section>
-        <section id="pricing">
-            
+        <section id="About">
+            <div class="aboutleft">
+                <h2>We love what we do, and you will, too. Want to learn more about us?</h2>
+                <p>Our team of designated developers are doing what they love for a living, which makes them committed to producing the best products for our clientel.</p>
+                <p>The best innovations always start with an idea. Watch our video to learn more about our team, our products, and everything our company stands for, or click the button below for a sample of our work.</p>
+                <button class="tryfree">Try it free!</button>
+            </div>
+            <div class="aboutright">
+                <iframe src="https://www.youtube.com/embed/20pvrDle36o" title="About Our Company" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen controls></iframe>
+            </div>
+        </section>
+        <section id="FAQ">
+            <div class="faqcontainer">
+                <div class="faqleft">
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Here are some questions that our customers frequently ask us. If your question isn't featured here, you can contact us by clicking the button below.</p>
+                    <button class="contact">Contact us</button>
+                </div>
+                <div class="faqright">
+                    <div class="faq">
+                        <div class="faq-top">
+                        <p class="question">Can I try before I buy?</p>
+                        <i class="zmdi zmdi-caret-down zmdi-hc-3x"></i>
+                        </div>
+                        <div class="faq-answer">
+                        <p class="answer">Yes! We want you to be happy with what you recieve, so you can try our services for free for 7 days before any sort of commitments.</p>
+                        </div>
+                    </div>
+                    <div class="faq">
+                        <div class="faq-top">
+                        <p class="question">Can I change my plan later?</p>
+                        <i class="zmdi zmdi-caret-down zmdi-hc-3x"></i>
+                        </div>
+                        <div class="faq-answer">
+                        <p class="answer">Our customer service team is always available for those who purchase the Premium and Business Plans, and for 7 hours a day for those with the Standard Plan. Simply call us to discuss changing your plan.</p>
+                        </div>
+                    </div>
+                    <div class="faq">
+                        <div class="faq-top">
+                        <p class="question">What payment methods do you accept?</p>
+                        <i class="zmdi zmdi-caret-down zmdi-hc-3x"></i>
+                        </div>
+                        <div class="faq-answer">
+                        <p class="answer">We accept all payment methods except cash. Money orders are accepted from established clientele.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Pricing">
+            <div class="pricecontainer">
+                <div class="pricebox">
+                    <h3 class="priceamt"><span class="dlrsgn">$</span>99</h3>
+                    <p class="plan">Standard Plan</p>
+                    <hr>
+                    <p class="feature">First feature goes here</p>
+                    <p class="feature">Second standard plan goes here</p>
+                    <p class="feature">Third feature goes here</p>
+                    <p class="feature">Final feature here</p>
+                    <button class="pricebtn">Select Plan</button>
+                </div>
+                <div class="pricebox" id="midpricebox">
+                    <h3 class="priceamt"><span class="dlrsgn">$</span>129</h3>
+                    <p class="plan">Premium Plan</p>
+                    <hr>
+                    <p class="feature">First feature goes here</p>
+                    <p class="feature">Second standard plan goes here</p>
+                    <p class="feature">Third feature goes here</p>
+                    <p class="feature">Final feature here</p>
+                    <button class="pricebtn">Select Plan</button>
+                </div>
+                <div class="pricebox">
+                    <h3 class="priceamt"><span class="dlrsgn">$</span>149</h3>
+                    <p class="plan">Business Plan</p>
+                    <hr>
+                    <p class="feature">First feature goes here</p>
+                    <p class="feature">Second standard plan goes here</p>
+                    <p class="feature">Third feature goes here</p>
+                    <p class="feature">Final feature here</p>
+                    <button class="pricebtn">Select Plan</button>
+                </div>
+            </div>
+        </section>
+        <section id="CTA">
+            <h2 class="subscribetitle">Subscribe</h2>
+            <p class="subscribetext">Subscribe for updates, hidden content, and more, all straight to your inbox!</p>
+            <div class="form">
+                <form>
+                    <input type="text" id="ctainput" placeholder="johndoe@email.com">
+                    <button type="submit" class="ctasubmit" name="submit">Subscribe</button>
+                </form>
+            </div>
         </section>
     </main>
     <footer>
-
+        <div id="foot">
+            <p>This freeCodeCamp project created by <a href="https://www.github.com/Risclover/" class="credit">Risclover</a>.</p>
+        </div>
     </footer>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="zmdi zmdi-chevron-up zmdi-hc-3x"></i>
+    </button>
 </body>
+<script src="script.js"></script>
 </html>

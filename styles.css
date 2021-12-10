@@ -1,0 +1,955 @@
+/* General */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    font-size: .93rem;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    scroll-padding-top: 20px;
+    color:rgb(38, 46, 60);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    background-color: #000297;
+}
+
+header {
+    max-width: 1300px;
+}
+
+section {
+    background-color: white;
+    height: 100vh;
+    padding: 20px 0;
+    max-width: 1300px;
+    min-width: 100vw;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+div {
+    max-width: 1300px;
+}
+
+p {
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+
+a {
+    font-weight: 400;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    transition: color .5s ease-in-out;
+}
+
+a:hover {
+    color: #12c8ff;
+}
+
+button {
+    width: 115px;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 100px;
+    font-family: 'Poppins', sans-serif;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#company-logo {
+    font-size: 2.3rem;
+    color: white;
+}
+
+nav {
+    color: white;
+    opacity: 1;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    width: 100%;
+    transition: 0.4s;
+    padding: 10px;
+}
+
+.navleft {
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+.navright {
+    float: right;
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* Hero */
+
+.subtitle {
+    text-align: center;
+}
+
+#heroinput {
+    border: none;
+    height: 45px;
+    border-radius: 100px;
+    outline: none !important;
+    padding: 5px 100px 5px 35px;
+    font-size: 1rem;
+}
+
+#Home {
+    max-width: 1300px;
+    width: 100%;
+    color: white;
+    background-color: #21D4FD;
+    background-color: #00ffd2;
+    background-image: linear-gradient(0deg, #00ffd2 0%, #008eff 52%, #000297 100%);
+    min-height: 550px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pagetitle {
+    color: white;
+    max-width: 600px;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pagesubtitle {
+    margin: 30px auto;
+    max-width: 520px;
+    font-size: .9rem;
+}
+
+.form {
+    position: relative;
+}
+
+
+
+/* Features */
+
+.sectionhead {
+    width: 80vw;
+    max-width: 700px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+}
+
+.icon2 {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 5px;
+    margin-top: -5px;
+}
+
+.icon-grid-container {
+    display: flex;
+    justify-content: center;
+    width: 95vw;
+    margin: 0 auto;
+}
+
+.icon-gridbox {
+    width: 80vw;
+    height: 225px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    transition: all 1s ease;
+}
+
+
+.icon-gridbox p {
+    font-size: .9rem;
+}
+
+
+
+/* About */
+
+#About {
+    background-color: #f2f2f2;
+    display: flex;
+}
+
+.aboutleft {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    width: 40vw;
+}
+
+iframe {
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+
+/* FAQ */
+
+#FAQ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.zmdi-caret-down {
+    margin-left: 30px;
+}
+
+.faqleft {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.faqright {
+    padding: 5px;
+    width: 400px;
+}
+
+.faqleft p {
+    margin-bottom: 10px;
+}
+
+.faq {
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+.faq-top {
+    display: flex;
+    vertical-align: center;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    transition: .3s ease;
+    padding: 5px 15px;
+}
+
+.faq-top:hover {
+    color: rgb(0, 119, 255);
+}
+
+.faq-top p {
+    margin: 0;
+}
+
+.answer {
+    padding-right: 10px;
+    display: block;
+}
+
+.faq-answer {
+    padding: 10px 15px 5px 15px;
+    display: none;
+}
+
+.faqcontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+}
+
+.active {
+    background-color: #f3f6ff;
+    color: black;
+    font-size: .8rem;
+}
+
+.activeline {
+    border-bottom: 1px solid white;
+    background-image: linear-gradient(90deg, #0f3dd3 0%, #1bdef8 100%);
+    font-size: .9rem;
+    background-color: #0f74d3;
+    color: white;
+}
+
+.active:hover {
+    color: black;
+}
+
+.activeline:hover {
+    color: white;
+}
+
+
+/* Pricing */
+#Pricing {
+    background-color: #f2f2f2;
+    display: flex;
+}
+
+.pricebox {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    transition: all 0.5s ease;
+    color: #4e5d68;
+    width: 200px;
+    border-radius: 8px;
+}
+
+.pricebox:hover {
+    margin-top: -15px;
+    margin-bottom: 15px;
+    background-image: linear-gradient(0deg, #0dd7f2 0%, #0077ff 50%, #000297 100%);
+    color: white;
+}
+
+.pricecontainer {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.priceamt {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.dlrsgn {
+    font-size: 1.2rem;
+    vertical-align: top;
+    margin-right: 3px;
+}  
+
+.plan {
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1.5px;
+    margin-top: 20px;
+    font-weight: 400;
+}
+
+hr {
+    width: 200px;
+    background-color: rgb(16, 194, 176);
+    border: none;
+    height: 1px;
+    margin-bottom: 10px;
+}
+
+hr:hover {
+    background-color: none;
+}
+
+.feature {
+    font-family: 'Open Sans', sans-serif;
+    font-size: .8rem;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.pricebtn {
+    color: white;
+    margin-top: 20px;
+    height: 45px;
+    width: 140px;
+    background-color: #0059ff;
+    border: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all .3s ease-out;
+}
+
+.pricebtn:hover {
+    background-color: white;
+    color: #128dff;
+}
+
+/* Call to Action (CTA) */
+
+#CTA {
+    background-image: linear-gradient(180deg, #00ffd2 0%, #008eff 52%, #000297 100%);
+    height: 5vh;
+    min-height: 300px;   
+}
+
+.subscribetitle {
+    color: white;
+    font-size: 2.2rem;
+}
+
+.subscribetext {
+    color: white;
+    text-align: center;
+    max-width: 415px;
+    margin-bottom: 40px;
+}
+
+#ctainput {
+    border: none;
+    outline: none !important;
+    height: 35px;
+    border-radius: 100px;
+    padding: 5px 90px 5px 20px;
+    font-size: .8rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.ctasubmit {
+    position: absolute;
+    top: 5px;
+    right: 4px;
+    color: black;
+    border: none;
+    height: 35px;
+    border-radius: 100px;
+    color: white;
+    font-size: .8rem;
+    width: 110px;
+    background-color: #128dff;
+    z-index: 1.5;
+    text-transform: uppercase;
+    transition: .5s ease-in-out;
+}
+
+.ctasubmit:hover {
+    background-color:#00d0ff;
+}
+
+
+/* Footer */
+
+#foot {
+    bottom: 0;
+    color: white;
+    font-size: .8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+footer {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    background-color: #000297;
+    color: white;
+    max-width: 1300px;
+    width: 100%;
+}
+
+
+/* Buttons */
+
+.submit {
+    color: black;
+    border: none;
+    height: 40px;
+    border-radius: 100px;
+    color: white;
+    width: 125px;
+    background-color: #128dff;
+    z-index: 1.5;
+    text-transform: uppercase;
+    transition: .5s ease-in-out;
+}
+
+.submit:hover {
+    background-color:#00d0ff;
+}
+
+.tryfree, .contact {
+    background-image: linear-gradient(180deg, #0051ff 0%, #00aeff 100%);
+    text-align: center;
+    color: white;            
+    background-size: 200% auto;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 100px;
+    border: none;
+    background-repeat:no-repeat;
+    background-position:center;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.tryfree:hover, .contact:hover {
+    background-image: linear-gradient(180deg, #0099ff 0%, #00e1ff 100%);
+    background-repeat:no-repeat;
+    text-decoration: none;
+ }
+
+.btncolor {
+    margin: 0 30px 0 20px;
+    float: right;
+    background-color: white;
+    border: none;
+    color: #128dff;
+    transition: .5s ease-in-out;
+}
+
+.btncolor:hover {
+    color: white;
+    border: 1px solid rgb(1, 18, 85);
+    background-color: #128dff;
+}
+
+.btnscroll {
+    margin: 0 30px 0 20px;
+    float: right;
+    background-color: #128dff;
+    border: none;
+    color: white;
+    transition: .5s ease-in-out;
+}
+
+.btnscroll:hover {
+    background-color: white;
+    border: none;
+    color: #128dff;
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 3; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #196deb; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 5px; /* Some padding */
+    border-radius: 100px; /* Rounded corners */
+    transition: .3s ease-in-out;
+    width: 50px;
+    height: 50px;
+}
+  
+#myBtn:hover {
+    background-color: #00c3ff;
+}
+
+.credit {
+    color:#8bfffd;
+    padding: 0;
+    transition: .5s ease-in-out;
+}
+
+.credit:hover {
+    color: white;
+}
+
+@media (max-width: 500px) {
+    #Features {
+        min-height: 900px;
+    }
+
+    #About {
+        min-height: 800px;
+    }
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .pagetitle {
+        width: 95vw;
+    }
+
+    .pagesubtitle {
+        width: 95vw; 
+    }
+
+    .subtitle {
+        font-size: .9rem;
+    }
+    .contact {
+        margin: 10px auto 50px auto;
+    }
+
+    #join {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .navright {
+        flex-direction: column;
+    }
+
+    section {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #FAQ {
+        height: 700px;
+    }
+
+    .faqleft {
+        text-align: center;
+    }
+
+    #Pricing {
+        height: 120vh;
+        min-height: 1300px;
+    }
+
+    #About {
+        flex-direction: column;
+    }
+
+    .aboutleft {
+        text-align: center;
+        width: 90vw;
+    }
+
+    .tryfree {
+        margin: 20px auto;
+    }
+
+    .icon-grid-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .faqcontainer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pricecontainer {
+        flex-direction: column;
+    }
+
+    .pricebox {
+        margin: 30px auto;
+    }
+
+    .faqleft {
+        width: 70vw;
+        min-width: 300px;
+    }
+
+    .faqright {
+        max-width: 400px;
+        width: 80vw;
+    }
+
+    .navbar {
+        justify-content: center;
+    }
+
+    .navright {
+        align-items: center;
+        justify-content: center;
+    }
+
+    a {
+        padding: 5px;
+    }
+
+    #heroinput {
+        width: 50vw;
+    }
+    
+    #ctainput {
+        width: 200px;
+    }
+
+    #form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .submit {
+        margin: 10px auto;
+    }
+
+    iframe {
+        width: 90vw;
+        height: 65vw;
+    }
+
+
+}
+
+@media (max-width: 799px) and (min-width: 501px){ 
+    #Features {
+        min-height: 900px;
+    }
+
+    #About {
+        min-height: 800px;
+    }
+    .pagetitle {
+        width: 90vw;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+    iframe {
+        width: 500px;
+        height: 355px;
+    }
+    
+.contact {
+        margin: 10px auto 50px auto;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #join {
+        width: 115px;
+    }
+
+    section {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #FAQ {
+        height: 700px;
+    }
+
+    .faqleft {
+        text-align: center;
+    }
+
+    #Pricing {
+        height: 120vh;
+        min-height: 1300px;
+    }
+
+    #About {
+        flex-direction: column;
+    }
+
+    .aboutleft {
+        text-align: center;
+        width: 500px;
+    }
+    
+
+    .tryfree {
+        margin: 5px auto;
+    }
+
+    .icon-grid-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .faqcontainer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pricecontainer {
+        flex-direction: column;
+    }
+
+    .pricebox {
+        margin: 30px auto;
+    }
+
+    .faqleft {
+        width: 70vw;
+        min-width: 300px;
+    }
+
+    .faqright {
+        max-width: 400px;
+        width: 80vw;
+    }
+
+    .navbar {
+        width: 100%;
+    }
+
+    .navright {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    ul {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    a {
+        padding: 10px;
+    }
+
+    #heroinput {
+        width: 50vw;
+    }
+    
+    #ctainput {
+        width: 200px;
+    }
+
+    .submit {
+        position: absolute;
+        top: 8px;
+        right: 6px;
+    }
+    
+}
+
+
+@media (min-width: 800px) {
+    #company-logo {
+        margin-left: 15px;
+    }
+    iframe {
+        width: 50vw;
+        height: 35vw;
+        max-width: 475px;
+        max-height: 325px;
+        margin-left: 40px;
+    }
+    #heroinput {
+        width: 400px;
+    }
+    
+    #ctainput {
+        width: 300px;
+    }
+
+    a {
+        padding: 20px;
+    }
+    section {
+        max-height: 1000px;
+        min-height: 550px;
+    }
+    .tryfree, .contact {
+        margin: 10px 0;
+    }
+
+    #About {
+        flex-direction: row;
+    }
+    
+    .pricecontainer {
+        flex-direction: row;
+    }
+
+    .faqcontainer {
+        flex-direction: row;
+    }
+
+    .icon-gridbox {
+        margin: 40px;
+    }
+
+    .faqleft {
+        width: 40vw;
+        max-width: 500px;
+        margin-right: 50px;
+    }
+
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .submit {
+        position: absolute;
+        top: 8px;
+        right: 6px;
+    }
+}
