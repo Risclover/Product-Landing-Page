@@ -19,6 +19,8 @@ body, html {
 }
 
 header {
+    display: flex;
+    width: 100%;
     max-width: 1300px;
 }
 
@@ -60,6 +62,7 @@ h2 {
 
 ul {
     display: flex;
+    width: 100%;
     list-style: none;
 }
 
@@ -92,16 +95,6 @@ button:hover {
 
 /* Navbar */
 
-.navbar {
-    display: flex;
-    align-items: center;
-    width: 100%;
-}
-
-#company-logo {
-    font-size: 2.3rem;
-    color: white;
-}
 
 nav {
     color: white;
@@ -110,24 +103,23 @@ nav {
     position: fixed;
     top: 0;
     display: flex;
-    align-items: center;
-    justify-content: center;
     left: 0;
     width: 100%;
+    justify-content: center;
+    align-items: center;
     transition: 0.4s;
-    padding: 10px;
 }
 
 .navleft {
-    float: left;
+    width: 100%;
+    justify-content: space-between;
     display: flex;
-    align-items: center;
 }
 
 .navright {
-    float: right;
-    display: flex;
     align-items: center;
+    justify-content: flex-end;
+    display: flex;
 }
 
 
@@ -138,7 +130,7 @@ nav {
     text-align: center;
 }
 
-#heroinput {
+#email {
     border: none;
     height: 45px;
     border-radius: 100px;
@@ -244,6 +236,7 @@ nav {
 }
 
 iframe {
+    border: none;
     margin-top: 20px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
@@ -401,9 +394,6 @@ hr {
     margin-bottom: 10px;
 }
 
-hr:hover {
-    background-color: none;
-}
 
 .feature {
     font-family: 'Open Sans', sans-serif;
@@ -472,7 +462,7 @@ hr:hover {
     font-size: .8rem;
     width: 110px;
     background-color: #128dff;
-    z-index: 1.5;
+    z-index: 2;
     text-transform: uppercase;
     transition: .5s ease-in-out;
 }
@@ -520,7 +510,7 @@ footer {
     color: white;
     width: 125px;
     background-color: #128dff;
-    z-index: 1.5;
+    z-index: 2;
     text-transform: uppercase;
     transition: .5s ease-in-out;
 }
@@ -608,6 +598,7 @@ footer {
     color:#8bfffd;
     padding: 0;
     transition: .5s ease-in-out;
+    font-size: 1rem;
 }
 
 .credit:hover {
@@ -615,6 +606,33 @@ footer {
 }
 
 @media (max-width: 500px) {
+    #header-img {
+        max-width: 250px;
+        width: 100%;
+        height: 100%;
+        color: white;
+        margin: 5px 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+    }
+    
+    .navleft {
+        flex-direction: column;
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+    }
+    
+    .navright {
+        width: 100%;
+    }
+
+
     #Features {
         min-height: 900px;
     }
@@ -643,16 +661,6 @@ footer {
 
     #join {
         display: none;
-    }
-
-    .navbar {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .navright {
-        flex-direction: column;
     }
 
     section {
@@ -717,21 +725,12 @@ footer {
         max-width: 400px;
         width: 80vw;
     }
-
-    .navbar {
-        justify-content: center;
-    }
-
-    .navright {
-        align-items: center;
-        justify-content: center;
-    }
-
     a {
-        padding: 5px;
+        font-size: 3vw;
+        padding: 10px;
     }
 
-    #heroinput {
+    #email {
         width: 50vw;
     }
     
@@ -758,6 +757,25 @@ footer {
 }
 
 @media (max-width: 799px) and (min-width: 501px){ 
+    #header-img {
+        width: 250px;
+        height: 100%;
+        color: white;
+        margin: 5px 10px;
+    }
+
+    .navleft {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
     #Features {
         min-height: 900px;
     }
@@ -777,16 +795,12 @@ footer {
         height: 355px;
     }
     
-.contact {
+    .contact {
         margin: 10px auto 50px auto;
     }
 
-    .navbar {
-        display: flex;
-        flex-direction: column;
-    }
-
     #join {
+        margin-top: 15px;
         width: 115px;
     }
 
@@ -854,27 +868,19 @@ footer {
         width: 80vw;
     }
 
-    .navbar {
-        width: 100%;
-    }
 
-    .navright {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
 
     ul {
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         width: 100%;
     }
 
     a {
-        padding: 10px;
+        padding: 8px;
     }
 
-    #heroinput {
+    #email {
         width: 50vw;
     }
     
@@ -887,14 +893,22 @@ footer {
         top: 8px;
         right: 6px;
     }
+
+    #join {
+        display: none;
+    }
     
 }
 
 
 @media (min-width: 800px) {
-    #company-logo {
-        margin-left: 15px;
+    #header-img {
+        width: 250px;
+        height: 100%;
+        color: white;
+        margin: 5px 10px;
     }
+    
     iframe {
         width: 50vw;
         height: 35vw;
@@ -902,7 +916,7 @@ footer {
         max-height: 325px;
         margin-left: 40px;
     }
-    #heroinput {
+    #email {
         width: 400px;
     }
     
@@ -911,7 +925,7 @@ footer {
     }
 
     a {
-        padding: 20px;
+        padding: 20px 15px;
     }
     section {
         max-height: 1000px;
@@ -943,13 +957,15 @@ footer {
         margin-right: 50px;
     }
 
-    .navbar {
-        justify-content: space-between;
-    }
-
     .submit {
         position: absolute;
         top: 8px;
         right: 6px;
     }
+
+    nav {
+        flex-direction: row;
+    }
+
+    
 }

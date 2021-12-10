@@ -21,43 +21,40 @@
 </head>
 <body>
     <header id="header">
-        <nav id="nav-bar" class="regnav">
-            <div class="navbar">
-                <div class="navleft">
-                    <h1 id="company-logo">myCompany</h1>
+        <nav id="nav-bar">
+            <div class="navleft">
+                <img src="companylogo.png" id="header-img" alt="logo">
+
+                <div class="navlinks">
+                    <ul>
+                        <li>
+                            <a href="#Home" class="nav-link">Home</a>
+                        </li>
+                        <li>
+                            <a href="#Features" class="nav-link">
+                                Features
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#About" class="nav-link">
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#FAQ" class="nav-link">
+                                FAQ
+                            </a>          
+                        </li>
+                        <li>
+                            <a href="#Pricing" class="nav-link">
+                                Pricing
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="navright">
-                    <div class="navlinks">
-                        <ul>
-                            <li>
-                                <a href="#Home">Home</a>
-                            </li>
-                            <li>
-                                <a href="#Features">
-                                    Features
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#About">
-                                    About
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#FAQ">
-                                    FAQ
-                                </a>          
-                            </li>
-                            <li>
-                                <a href="#Pricing">
-                                    Pricing
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="navjoin">
-                        <button id="join" class="btncolor">Join us!</button>
-                    </div>
-                </div>
+            </div>
+            <div class="navright">
+                <button id="join" class="btncolor">Join us!</button>
             </div>
         </nav>
     </header>
@@ -71,8 +68,8 @@
             </div>
             <div class="form">
                 <form id="form" action="https://www.freecodecamp.com/email-submit">
-                    <input type="email" id="heroinput" placeholder="janedoe@email.com" name="email" autocomplete="on" required>
-                    <button type="submit" class="submit" name="submit">Subscribe</button>
+                    <input type="email" id="email" placeholder="janedoe@email.com" name="email" autocomplete="on" required>
+                    <input type="submit" class="submit" name="submit" id="submit">
                 </form>
             </div>
         </section>
@@ -83,17 +80,17 @@
             </div>
             <div class="icon-grid-container">
                 <div class="icon-gridbox">
-                    <img src="Finance-Money-Box-icon-gradient2.png" class="icon">
+                    <img src="Finance-Money-Box-icon-gradient2.png" class="icon" alt="">
                     <h3>Quality Work for Low Prices</h3>
                     <p>Find empty spot in cupboard and sleep all day be superior but fooled again thinking the dog likes me. Nyan fluffness ahh cucumber!</p>
                 </div>
                 <div class="icon-gridbox">
-                    <img src="Ecommerce-Delivery-icon-gradient.png" class="icon2">
+                    <img src="Ecommerce-Delivery-icon-gradient.png" class="icon2" alt="">
                     <h3>Quick Delivery</h3>
                     <p>Find empty spot in cupboard and sleep all day be superior but fooled again thinking the dog likes me. Nyan fluffness ahh cucumber!</p>
                 </div>
                 <div class="icon-gridbox">
-                    <img src="Science-Physics-icon-gradient2.png" class="icon">
+                    <img src="Science-Physics-icon-gradient2.png" class="icon" alt="">
                     <h3>Innovations from Top Minds</h3>
                     <p>Find empty spot in cupboard and sleep all day be superior but fooled again thinking the dog likes me. Nyan fluffness ahh cucumber!</p>
                 </div>
@@ -107,7 +104,7 @@
                 <button class="tryfree">Try it free!</button>
             </div>
             <div class="aboutright">
-                <iframe src="https://www.youtube.com/embed/20pvrDle36o" title="About Our Company" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen controls></iframe>
+                <iframe src="https://www.youtube.com/embed/20pvrDle36o" title="About Our Company" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" id="video" allowfullscreen></iframe>
             </div>
         </section>
         <section id="FAQ">
@@ -200,6 +197,7 @@
     </footer>
     <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="zmdi zmdi-chevron-up zmdi-hc-3x"></i>
     </button>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
