@@ -516,6 +516,7 @@ footer {
 }
 
 .submit:hover {
+    cursor: pointer;
     background-color:#00d0ff;
 }
 
