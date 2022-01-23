@@ -6,7 +6,7 @@
 }
 
 body, html {
-    font-size: .93rem;
+    font-size: 1rem;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
     scroll-padding-top: 20px;
@@ -156,7 +156,7 @@ nav {
 
 .pagetitle {
     color: white;
-    max-width: 600px;
+    max-width: 800px;
     width: 90vw;
     display: flex;
     flex-direction: column;
@@ -165,8 +165,8 @@ nav {
 
 .pagesubtitle {
     margin: 30px auto;
-    max-width: 520px;
-    font-size: .9rem;
+    max-width: 720px;
+    font-size: 1rem;
 }
 
 .form {
@@ -216,7 +216,7 @@ nav {
 
 
 .icon-gridbox p {
-    font-size: .9rem;
+    font-size: 1rem;
 }
 
 
@@ -316,13 +316,13 @@ iframe {
 .active {
     background-color: #f3f6ff;
     color: black;
-    font-size: .8rem;
+    font-size: .9rem;
 }
 
 .activeline {
     border-bottom: 1px solid white;
     background-image: linear-gradient(90deg, #0f3dd3 0%, #1bdef8 100%);
-    font-size: .9rem;
+    font-size: 1rem;
     background-color: #0f74d3;
     color: white;
 }
@@ -380,7 +380,7 @@ iframe {
 
 .plan {
     text-transform: uppercase;
-    font-size: .9rem;
+    font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 1.5px;
     margin-top: 20px;
@@ -398,7 +398,7 @@ hr {
 
 .feature {
     font-family: 'Open Sans', sans-serif;
-    font-size: .8rem;
+    font-size: .9rem;
     text-align: center;
     font-weight: 400;
     margin-top: 5px;
@@ -447,7 +447,7 @@ hr {
     height: 35px;
     border-radius: 100px;
     padding: 5px 90px 5px 20px;
-    font-size: .8rem;
+    font-size: .9rem;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -460,7 +460,7 @@ hr {
     height: 35px;
     border-radius: 100px;
     color: white;
-    font-size: .8rem;
+    font-size: .9rem;
     width: 110px;
     background-color: #128dff;
     z-index: 2;
@@ -478,7 +478,7 @@ hr {
 #foot {
     bottom: 0;
     color: white;
-    font-size: .8rem;
+    font-size: .9rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -655,7 +655,7 @@ footer {
     }
 
     .subtitle {
-        font-size: .9rem;
+        font-size: 1rem;
     }
     .contact {
         margin: 10px auto 50px auto;
@@ -729,7 +729,7 @@ footer {
         width: 80vw;
     }
     a {
-        font-size: 3vw;
+        font-size: .8rem;
         padding: 10px;
     }
 
@@ -904,7 +904,7 @@ footer {
 }
 
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
     #header-img {
         width: 250px;
         height: 100%;
